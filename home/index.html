@@ -4,169 +4,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accès à la Communauté TTECH™</title>
   
-  <style>
+  <style> 
     /* Burger menu */
-.burger-menu {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 100;
-  cursor: pointer;
-}
-
-.burger-menu div {
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-/* Menu qui apparaît quand le burger est cliqué */
-.menu-bar {
-  display: none;
-  flex-direction: column;
-  gap: 10px;
-  background-color: #f1f1f7;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 50px;
-  left: 0;
-  right: 0;
-  width: 200px;
-  margin: auto;
-}
-
-.menu-bar a {
-  color: #333;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
-  display: block;
-  transition: background-color 0.3s;
-}
-
-.menu-bar a:hover {
-  background-color: #ddd;
-}
-
-/* Lorsque le menu est ouvert */
-.burger-menu.active div:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.burger-menu.active div:nth-child(2) {
-  opacity: 0;
-}
-
-.burger-menu.active div:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
-    /* PHONE */
-    @media screen and (max-width: 767px) {
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #ffffff;
-      display: inline;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-
-    #casset{
-      font-size: 18px;
-    }
-      
-    .container {
-    display: block;
-    text-align: center;
-    background: #f1f1f7;
-    padding: 40px;
-    margin: 6%;
-    border-radius: 20px;
-    box-shadow: 6px 5px 10px 2px rgba(6, 4, 4, 0.231);
-
-    }
-
-    .container1 {
-    display: block;
-    background: #f1f1f7;
-    padding: 40px;
-    margin: 5%;
-    padding-bottom: 20%;
-    border-radius: 20px;
-    box-shadow: 6px 5px 10px 2px rgba(6, 4, 4, 0.231);
-
-    }
-
-    .container img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-    }
-
-    h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #222;
-    }
-
-    p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
-    }
-
-    input[type="text"] {
-    padding: 15px;
-    padding-left: 20px;
-    width: 90%;
-    border: none;
-    border-radius: 30px;
-    background: #ffffff;
-    box-shadow: inset 6px 5px 10px 2px rgba(6, 4, 4, 0.231);
-    font-size: 16px;
-    transition: all 0.3s ease;
-    }
-
-    input[type="text"]:focus {
-    outline: none;
-    background: #ffffff;
-    box-shadow: inset 6px 5px 10px 2px rgba(255, 0, 13, 0.231);
-    }
-
-    button {
-    padding: 9px 50px;
-    font-size: 16px;
-    background-color: #fefefe;
-    box-shadow: 6px 5px 10px 2px rgba(6, 4, 4, 0.167);
-    border: none;
-    border-radius: 30px;
+  .burger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
     cursor: pointer;
-    }
+  }
 
-    button:hover {
-    box-shadow: 0px 0px 10px  rgba(6, 4, 4, 0.231);
-    transition: 0.1s;
-    }
+  .burger-menu div {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
 
-    #message {
-    margin-top: 20px;
-    font-weight: bold;
-    }
-    body{
-    background-color: rgb(4, 111, 114);
-    }
+  /* Menu qui apparaît quand le burger est cliqué */
+  .menu-bar {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f1f1f7;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 200px;
+    margin: auto;
+  }
 
-    }
+  .menu-bar a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+  }
+
+  .menu-bar a:hover {
+    background-color: #ddd;
+  }
+
+  /* Lorsque le menu est ouvert */
+  .burger-menu.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .burger-menu.active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+      /* PHONE */
+      @media screen and (max-width: 767px) {
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #ffffff;
+        display: inline;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      #casset{
+        font-size: 18px;
+      }
+        
+      .container {
+      display: block;
+      text-align: center;
+      background: #f1f1f7;
+      padding: 40px;
+      margin: 6%;
+      border-radius: 20px;
+      box-shadow: 6px 5px 10px 2px rgba(6, 4, 4, 0.231);
+
+      }
+
+      .container1 {
+      display: block;
+      background: #f1f1f7;
+      padding: 40px;
+      margin: 5%;
+      padding-bottom: 20%;
+      border-radius: 20px;
+      box-shadow: 6px 5px 10px 2px rgba(6, 4, 4, 0.231);
+
+      }
+
+      .container img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      }
+
+      h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #222;
+      }
+
+      p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+      }
+
+      input[type="text"] {
+      padding: 15px;
+      padding-left: 20px;
+      width: 90%;
+      border: none;
+      border-radius: 30px;
+      background: #ffffff;
+      box-shadow: inset 6px 5px 10px 2px rgba(6, 4, 4, 0.231);
+      font-size: 16px;
+      transition: all 0.3s ease;
+      }
+
+      input[type="text"]:focus {
+      outline: none;
+      background: #ffffff;
+      box-shadow: inset 6px 5px 10px 2px rgba(255, 0, 13, 0.231);
+      }
+
+      button {
+      padding: 9px 50px;
+      font-size: 16px;
+      background-color: #fefefe;
+      box-shadow: 6px 5px 10px 2px rgba(6, 4, 4, 0.167);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      }
+
+      button:hover {
+      box-shadow: 0px 0px 10px  rgba(6, 4, 4, 0.231);
+      transition: 0.1s;
+      }
+
+      #message {
+      margin-top: 20px;
+      font-weight: bold;
+      }
+      body{
+      background-color: rgb(4, 111, 114);
+      }
+
+      }
 
     /* ORDINATEURS & TABLETTES */
     @media screen and (min-width: 768px) {
@@ -196,11 +196,9 @@
       display: block;
       background: #f1f1f7;
       padding: 40px;
-      margin: 10%;
-      padding-bottom: 14%;
+      margin: 8%;
+      padding-bottom: 2%;
       border-radius: 20px;
-      box-shadow: 6px 5px 10px 2px rgba(6, 4, 4, 0.231);
-  
       }
   
       .container img {
@@ -264,15 +262,26 @@
       body{
       background-color: rgb(4, 111, 114);
       }
-
-      p{
-        font-size: large;
-      }
     }
+  
   </style>
 </head>
 <body>
- 
+  <div class="menu-bar" id="menuBar" style="display: flex;">
+    <a href="accueil.html">Accueil</a>
+    <a href="index.html">Rejoindre</a>
+    <a href="#">TTECH™</a>
+    <a href="#">Contact</a>
+    <a href="faq.html">FAQ</a>
+    <a href="#">Blog</a>
+  </div>
+
+  <div class="burger-menu" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  
   <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
