@@ -1,89 +1,349 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<!DOCTYPE html><html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accès à la Communauté TTECH™</title>
+  
+  <style>
+    /* Burger menu */
+.burger-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  cursor: pointer;
+}
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.6.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.6.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.6.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.6.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.6.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.6.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.6.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.6.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.6.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.6.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+.burger-menu div {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+/* Menu qui apparaît quand le burger est cliqué */
+.menu-bar {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f1f1f7;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  width: 200px;
+  margin: auto;
+}
+
+.menu-bar a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.menu-bar a:hover {
+  background-color: #ddd;
+}
+
+/* Lorsque le menu est ouvert */
+.burger-menu.active div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-menu.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+    /* PHONE */
+    @media screen and (max-width: 767px) {
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffffff;
+      display: inline;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #casset{
+      font-size: 18px;
+    }
+      
+    .container {
+    display: block;
+    text-align: center;
+    background: #f1f1f7;
+    padding: 40px;
+    margin: 6%;
+    border-radius: 20px;
+    box-shadow: 6px 5px 10px 2px rgba(6, 4, 4, 0.231);
+
+    }
+
+    .container1 {
+    display: block;
+    background: #f1f1f7;
+    padding: 40px;
+    margin: 5%;
+    padding-bottom: 20%;
+    border-radius: 20px;
+    box-shadow: 6px 5px 10px 2px rgba(6, 4, 4, 0.231);
+
+    }
+
+    .container img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+
+    h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #222;
+    }
+
+    p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+    padding: 15px;
+    padding-left: 20px;
+    width: 90%;
+    border: none;
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: inset 6px 5px 10px 2px rgba(6, 4, 4, 0.231);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+    outline: none;
+    background: #ffffff;
+    box-shadow: inset 6px 5px 10px 2px rgba(255, 0, 13, 0.231);
+    }
+
+    button {
+    padding: 9px 50px;
+    font-size: 16px;
+    background-color: #fefefe;
+    box-shadow: 6px 5px 10px 2px rgba(6, 4, 4, 0.167);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    }
+
+    button:hover {
+    box-shadow: 0px 0px 10px  rgba(6, 4, 4, 0.231);
+    transition: 0.1s;
+    }
+
+    #message {
+    margin-top: 20px;
+    font-weight: bold;
+    }
+    body{
+    background-color: rgb(4, 111, 114);
+    }
+
+    }
+
+    /* ORDINATEURS & TABLETTES */
+    @media screen and (min-width: 768px) {
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
       }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+        
+      .container {
+      display: block;
+      text-align: center;
+      background: #f1f1f7;
+      padding: 40px;
+      margin: 6%;
+      border-radius: 20px;
+      box-shadow: 6px 5px 10px 2px rgba(6, 4, 4, 0.231);
+  
+      }
+  
+      .container1 {
+      display: block;
+      background: #f1f1f7;
+      padding: 40px;
+      margin: 10%;
+      padding-bottom: 14%;
+      border-radius: 20px;
+      box-shadow: 6px 5px 10px 2px rgba(6, 4, 4, 0.231);
+  
+      }
+  
+      .container img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      }
+  
+      h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #222;
+      }
+  
+      p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+      }
+  
+      input[type="text"] {
+      padding: 15px;
+      padding-left: 20px;
+      width: 300px;
+      border: none;
+      border-radius: 30px;
+      background: #ffffff;
+      box-shadow: inset 6px 5px 10px 2px rgba(6, 4, 4, 0.231);
+      font-size: 16px;
+      transition: all 0.3s ease;
+      }
+  
+      input[type="text"]:focus {
+      outline: none;
+      background: #ffffff;
+      box-shadow: inset 6px 5px 10px 2px rgba(255, 0, 13, 0.231);
+      }
+  
+      button {
+      padding: 9px 50px;
+      font-size: 16px;
+      background-color: #fefefe;
+      box-shadow: 6px 5px 10px 2px rgba(6, 4, 4, 0.167);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      }
+  
+      button:hover {
+      box-shadow: 0px 0px 10px  rgba(6, 4, 4, 0.231);
+      transition: 0.1s;
+      }
+  
+      #message {
+      margin-top: 20px;
+      font-weight: bold;
+      }
+      body{
+      background-color: rgb(4, 111, 114);
+      }
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      p{
+        font-size: large;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyA5IVj2GYTa5El_UqRZ2P8K3qlnjlUGo_0",
+      authDomain: "ttech-6dd8a.firebaseapp.com",
+      projectId: "ttech-6dd8a",
+      storageBucket: "ttech-6dd8a.firebasestorage.app",
+      messagingSenderId: "547656139868",
+      appId: "1:547656139868:web:0025592a7858d1da7c5299"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+  <div class="container1">
+    <h1>Casse-tête d’entrée</h1>
+    <p>> Bienvenue !</p>
+    <p>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+      Écrivez un programme dans langage de votre choix qui calcule et affiche les termes de la suite de Fibonacci du 5ᵉ au 15ᵉ terme.
+      Ensuite, concaténez tous ces nombres sans espace, sans tiret.
+
+    </p>
+    <p>
+      
+      Chaque nombre individuel est un alphabet majuscule. Cesar detient la clé de chiffrement.
+      “Chaque lettre est déplacée dans l’alphabet selon le chiffre qui lui a donné naissance”
+    </p>
+
+    <p>      
+      Ce mot final constitue la clé secrète (mot de passe).
+      Si vous trouvez la bonne clé et la collez dans le champ d’accès, vous obtiendrez automatiquement le lien privé vers la grande communauté.
+    </p>
+    ---
+  </div>
+
+
+  <div class="container">
+    <img src="assets/logo-black.png" alt="Image Communauté TTECH™">
+    <h2>TTECH™ COMMUNITY</h2>
+    <p>Entrez la clé du casse-tête</p>
+    <input type="text" id="passwordInput" placeholder="Entre ta clé ici..." required>
+    <br><br>
+    <button onclick="checkPassword()">Valider</button>
+    <p id="message"></p>
+  </div>  
+  <script>
+    function toggleMenu() {
+      const menuBar = document.getElementById("menuBar");
+      const burgerMenu = document.querySelector(".burger-menu");
+      menuBar.style.display = menuBar.style.display === "flex" ? "none" : "flex";
+      burgerMenu.classList.toggle("active");
+    }
+    
+    function checkPassword() {
+      const correctPassword = "fjpbfdbfhjjprbhhdfffnn";
+      const input = document.getElementById("passwordInput").value.trim();
+      const message = document.getElementById("message");
+
+      if (input === correctPassword) {
+        window.location.href = "Acces-unlocked.html";
+      } else {
+        message.textContent = "Mot de passe incorrect. Essaie encore !";
+        message.style.color = "red";
+      }
+    }
+  </script>
+</body>
 </html>
