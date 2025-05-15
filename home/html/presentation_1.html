@@ -1,93 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Présentation - Abalo Koffi</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f7fc;
-      color: #333;
-    }
-    .container {
-      max-width: 900px;
-      background-color: #ffffff;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-      position: relative;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Présentation - Abalo Koffi</title>
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <style>
+      /* ORDINATEURS & TABLETTES */
+      @media screen and (min-width: 768px) {
+        .container {
+          margin: 50px auto;
+        }
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f8f7fc;
+        color: #333;
+      }
+      .container {
+        max-width: 900px;
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        position: relative;
+      }
 
-    .profile-photo {
-      position: absolute;
-      top: 40px;
-      right: 40px;
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 4px 4px 8px 2px rgba(6, 4, 4, 0.119);
-    }
+      .profile-photo {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 4px 4px 8px 2px rgba(6, 4, 4, 0.119);
+      }
 
-    .identity {
-      margin-right: 160px; /* pour laisser la place à la photo */
-    }
+      .identity {
+        margin-right: 160px; /* pour laisser la place à la photo */
+      }
 
-    .identity h1 {
-      margin: 0;
-      font-size: 28px;
-      color: #399ba8;
-    }
+      .identity h1 {
+        margin: 0;
+        font-size: 28px;
+        color: #399ba8;
+      }
 
-    .identity p {
-      margin: 4px 0;
-      font-size: 16px;
-    }
+      .identity p {
+        margin: 4px 0;
+        font-size: 16px;
+      }
 
-    .info-box {
-      margin-top: 40px;
-      padding: 20px;
-      background-color: #ffffff;
-      border-left: 2px solid #106a8e;
-      border-radius: 10px;
-      box-shadow: 4px 4px 8px 2px rgba(6, 4, 4, 0.119);
-    }
+      .info-box {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-left: 2px solid #106a8e;
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px 2px rgba(6, 4, 4, 0.119);
+      }
 
-    .info-box h2 {
-      margin-top: 0;
-      color: #258697;
-    }
+      .info-box h2 {
+        margin-top: 0;
+        color: #258697;
+      }
 
-    .info-box p {
-      font-size: 15px;
-      line-height: 1.6em;
-    }
-  </style>
-</head>
-<body>
+      .info-box p {
+        font-size: 15px;
+        line-height: 1.6em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="photo.jpg" alt="Abalo Koffi" class="profile-photo" />
 
-  <div class="container">
-    <img src="photo.jpg" alt="Abalo Koffi" class="profile-photo">
+      <div class="identity">
+        <h1>Date Dante Joel</h1>
+        <p><strong>Profession : </strong> Professeur, Formateur</p>
+        <p><strong>Email : </strong>joeldate39@gmail.com</p>
+        <p>
+          <strong>Github : </strong
+          ><a href="https://github.com/joel-cyborgue"
+            >https://github.com/joel-cyborgue</a
+          >
+        </p>
+        <p><strong>Tel : </strong>+228 92 00 00 00</p>
+      </div>
 
-    <div class="identity">
-      <h1>Date Dante Joel</h1>
-      <p><strong>Profession : </strong> Professeur, Formateur</p>
-      <p><strong>Email : </strong>joeldate39@gmail.com</p>
-      <p><strong>Github : </strong><a href="https://github.com/joel-cyborgue">https://github.com/joel-cyborgue</a></p>
-      <p><strong>Tel : </strong>+228 92 00 00 00</p>
+      <div class="info-box">
+        <h2>Informations Supplémentaires</h2>
+        <p>
+          Enseignant formateur en électronique appliquée. Fondateur de la
+          communauté TTECH™, il œuvre pour l'autonomie technologique en Afrique.
+          Passionné par la microfabrication de processeurs africains et
+          l’intelligence artificielle. Initiateur de projets éducatifs et de
+          fablabs pour les jeunes.
+        </p>
+      </div>
     </div>
-
-    <div class="info-box">
-      <h2>Informations Supplémentaires</h2>
-      <p>
-        Enseignant formateur en électronique appliquée. Fondateur de la communauté TTECH™, il œuvre pour l'autonomie technologique en Afrique. 
-        Passionné par la microfabrication de processeurs africains et l’intelligence artificielle. Initiateur de projets éducatifs et de fablabs pour les jeunes.
-      </p>
-    </div>
-  </div>
-
-</body>
+  </body>
 </html>
