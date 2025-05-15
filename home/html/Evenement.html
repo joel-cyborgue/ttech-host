@@ -1,17 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../style_css/acces.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Événement - TTECH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e0f7fa;
+      color: #333;
+    }
 
-    <title>Accès à la Communauté TTECH™</title>
-  </head>
-  <body>
-    <div class="container1">
-      contact :
-      </p>
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #00bcd4;
+    }
+
+    .video-section {
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    .video-section iframe {
+      width: 100%;
+      height: 480px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .link-section {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .link-section a {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #00bcd4;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .link-section a:hover {
+      background-color: #0097a7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Événement en direct</h1>
+
+    <div class="video-section">
+      <!-- Intégration YouTube (remplacez l'URL ci-dessous par la vôtre) -->
+      <iframe 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="Événement TTECH en direct"
+        allowfullscreen>
+      </iframe>
     </div>
-  </body>
+
+    <div class="link-section">
+      <a href="https://votresite.com">Visitez notre site officiel</a>
+    </div>
+  </div>
+</body>
 </html>

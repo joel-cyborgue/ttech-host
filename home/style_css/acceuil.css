@@ -126,6 +126,39 @@ h2 {
   transition: 800ms;
 }
 
-#cartediv{
-color: #222222;
+#cartediv {
+  color: #222222;
+}
+
+.video-section {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.video-section iframe {
+  width: 100%;
+  height: 50hv;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.link-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.link-section a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00bcd4;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.link-section a:hover {
+  background-color: #0097a7;
 }
