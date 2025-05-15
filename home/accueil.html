@@ -1,140 +1,158 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Accueil | TTECH™</title>
-  <style>
-    .logottech{
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil | TTECH™</title>
+    <style>
+      .logottech {
         height: 250px;
-    }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #ffffff;
-    }
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+      }
 
-    /* BARRE DE MENU */
-    .menu-bar {
-      background-color: #0a9e9e;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-    }
+      /* BARRE DE MENU */
+      .menu-bar {
+        background-color: #0a9e9e;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
 
-    .menu-bar .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 20px;
-      height: 60px;
-    }
+      a{
+        text-decoration: none;
+      }
 
-    .menu-bar .nav a {
-      color: white;
-      text-decoration: none;
-      margin-right: 20px;
-      font-weight: bold;
-    }
+      .menu-bar .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        height: 60px;
+      }
 
-    .menu-bar .nav a:hover {
-      color: cyan;
-    }
+      .menu-bar .nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-weight: bold;
+      }
 
-    .menu-bar .nav-links {
-      display: flex;
-    }
+      .menu-bar .nav a:hover {
+        color: cyan;
+      }
 
-    .burger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-
-    .burger div {
-      width: 25px;
-      height: 3px;
-      background-color: white;
-      margin: 4px;
-    }
-
-    .nav-mobile {
-      display: none;
-      flex-direction: column;
-      background-color: #0a9e9e;
-      transition: 2s;
-    }
-
-    a{
-      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      color:white;
-    }
-    .nav-mobile a {
-      padding: 10px 20px;
-      border-top: 1px solid #0570696e;
-    }
-
-    /* Responsive */
-    @media screen and (max-width: 768px) {
       .menu-bar .nav-links {
-        display: none;
+        display: flex;
       }
 
       .burger {
-        display: flex;
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .burger div {
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        margin: 4px;
+        border-radius: 3px;
       }
 
       .nav-mobile {
         display: none;
+        flex-direction: column;
+        background-color: #0a9e9e;
+        transition: 2s;
       }
 
-      .nav-mobile.show {
-        display: flex;
+      a {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: white;
       }
-    }
+      .nav-mobile a {
+        padding: 10px 20px;
+        border-top: 1px solid #0570696e;
+      }
 
-    .container {
-     padding: 4%;
-      max-width: 1000px;
-      margin: auto;
-    }
+      /* Responsive */
+      @media screen and (max-width: 768px) {
+        .menu-bar .nav-links {
+          display: none;
+        }
 
-    h2 {
-      color: #222222;
-      border-bottom: 1px solid #0aa0a02f;
-      padding-bottom: 5px;
-    }
+        .burger {
+          display: flex;
+        }
 
-    .sectionImg {
+        .nav-mobile {
+          display: none;
+        }
+
+        .nav-mobile.show {
+          display: flex;
+        }
+      }
+
+      .container {
+        padding: 4%;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      h2 {
+        color: #222222;
+        border-bottom: 1px solid #0aa0a02f;
+        padding-bottom: 5px;
+      }
+
+      .sectionImg {
         padding-top: 10%;
         text-align: center;
       }
 
-    .member-card {
-      background: white;
-      box-shadow: 0 0 10px rgba(71, 88, 88, 0.3);
-      border-radius: 5px;
-      padding: 15px;
-      margin: 10px 0;
-      border-left: 5px solid #0a9e9e;
-    }
+      .member-card {
+        background: white;
+        box-shadow: 0 0 10px rgba(71, 88, 88, 0.3);
+        border-radius: 5px;
+        padding: 15px;
+        margin: 10px 0;
+        border-left: 5px solid #0a9e9e;
+      }
 
-    .member-card:hover{
-      border-left: 5px solid #d3660d;
-    }
-    a:hover{
-      background-color: rgba(7, 182, 185, 0.445);
-      transition: 800ms;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Bande de menu responsive -->
-  <div class="menu-bar">
-    <div class="nav">
-      <div class="nav-links">
+      .member-card:hover {
+        border-left: 5px solid #d3660d;
+      }
+      a:hover {
+        background-color: rgba(7, 182, 185, 0.445);
+        transition: 800ms;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Bande de menu responsive -->
+    <div class="menu-bar">
+      <div class="nav">
+        <div class="nav-links">
+          <a href="accueil.html">Accueil</a>
+          <a href="index.html">Rejoindre</a>
+          <a href="a_propos.html">À propos de TTECH™</a>
+          <a href="contact.html">Contact</a>
+          <a href="faq.html">FAQ</a>
+          <a href="blog.html">Blog</a>
+        </div>
+        <div class="burger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="nav-mobile" id="mobileMenu">
         <a href="accueil.html">Accueil</a>
         <a href="index.html">Rejoindre</a>
         <a href="a_propos.html">À propos de TTECH™</a>
@@ -142,73 +160,73 @@
         <a href="faq.html">FAQ</a>
         <a href="blog.html">Blog</a>
       </div>
-      <div class="burger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
     </div>
-    <div class="nav-mobile" id="mobileMenu">
-      <a href="accueil.html">Accueil</a>
-      <a href="index.html">Rejoindre</a>
-      <a href="a_propos.html">À propos de TTECH™</a>
-      <a href="contact.html">Contact</a>
-      <a href="faq.html">FAQ</a>
-      <a href="blog.html">Blog</a>
+
+    <!-- Contenu principal -->
+    <section class="sectionImg">
+      <img
+        class="logottech"
+        src="assets/logo-black.png"
+        alt="Image Communauté TTECH™"
+      />
+    </section>
+    <div class="container">
+      <section class="section">
+        <h2>Nos membres</h2>
+        <div class="member-card">
+          <strong>Mawussi Yao Pierre – Fondateur</strong><br />
+          Ingénieur électronique, passionné par la microfabrication et les CPU
+          africains.
+        </div>
+
+        <div class="member-card">
+          <strong>Daté Dante Joel – Fondateur</strong><br />
+          Ingénieur électronique, passionné par la microfabrication et les CPU
+          africains.
+        </div>
+
+        <div class="member-card">
+          <strong>Amira S.</strong><br />
+          Spécialiste en design PCB, leader de l’équipe des lycéens stagiaires.
+        </div>
+        <div class="member-card">
+          <strong>Groupe Étudiant Fablab Lomé</strong><br />
+          Jeunes volontaires en prototypage et tests sur Proteus.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Historique de nos Réussites</h2>
+        <ul>
+          <li>
+            2023 : Conception d’une calculatrice artisanale sans importation de
+            CI.
+          </li>
+          <li>
+            2024 : Réalisation d’un mini-oscilloscope analogique fonctionnel par
+            des élèves de 1ère.
+          </li>
+          <li>2025 : Lancement du projet de CPU Open Source “TCHIP-1”.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Congrès et Événements</h2>
+        <ul>
+          <li>Avril 2025 : Participation au Salon des Makers – Lomé</li>
+          <li>
+            Juillet 2025 : Organisation du 1er Hackathon TTECH™ autour du FPGA
+            africain
+          </li>
+          <li>Décembre 2025 : Conférence “Low-Tech CPU Design” à Aného</li>
+        </ul>
+      </section>
     </div>
-  </div>
 
-  <!-- Contenu principal -->
-  <section class="sectionImg">
-    <img class="logottech" src="assets/logo-black.png" alt="Image Communauté TTECH™">
-  </section>
-  <div class="container">
-    <section class="section">
-      <h2>Nos membres</h2>
-      <div class="member-card">
-        <strong>Mawussi Yao Pierre – Fondateur</strong><br />
-        Ingénieur électronique, passionné par la microfabrication et les CPU africains.
-      </div>
-
-      <div class="member-card">
-        <strong>Daté Dante Joel – Fondateur</strong><br />
-        Ingénieur électronique, passionné par la microfabrication et les CPU africains.
-      </div>
-
-      <div class="member-card">
-        <strong>Amira S.</strong><br />
-        Spécialiste en design PCB, leader de l’équipe des lycéens stagiaires.
-      </div>
-      <div class="member-card">
-        <strong>Groupe Étudiant Fablab Lomé</strong><br />
-        Jeunes volontaires en prototypage et tests sur Proteus.
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Historique de nos Réussites</h2>
-      <ul>
-        <li>2023 : Conception d’une calculatrice artisanale sans importation de CI.</li>
-        <li>2024 : Réalisation d’un mini-oscilloscope analogique fonctionnel par des élèves de 1ère.</li>
-        <li>2025 : Lancement du projet de CPU Open Source “TCHIP-1”.</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>Congrès et Événements</h2>
-      <ul>
-        <li>Avril 2025 : Participation au Salon des Makers – Lomé</li>
-        <li>Juillet 2025 : Organisation du 1er Hackathon TTECH™ autour du FPGA africain</li>
-        <li>Décembre 2025 : Conférence “Low-Tech CPU Design” à Aného</li>
-      </ul>
-    </section>
-  </div>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById("mobileMenu").classList.toggle("show");
-    }
-  </script>
-
-</body>
+    <script>
+      function toggleMenu() {
+        document.getElementById("mobileMenu").classList.toggle("show");
+      }
+    </script>
+  </body>
 </html>

@@ -5,7 +5,9 @@
   <title>Accès à la Communauté TTECH™</title>
   
   <style> 
-    /* Burger menu */
+  /* PHONE */
+  @media screen and (max-width: 767px) {
+  /* Burger menu */
   .burger-menu {
     position: fixed;
     top: 20px;
@@ -15,11 +17,13 @@
   }
 
   .burger-menu div {
-    width: 35px;
+    width: 36px;
     height: 5px;
     background-color: white;
     margin: 6px 0;
     transition: 0.4s;
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(1, 96, 103, 0.441);
   }
 
   /* Menu qui apparaît quand le burger est cliqué */
@@ -64,9 +68,6 @@
   .burger-menu.active div:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
   }
-
-      /* PHONE */
-      @media screen and (max-width: 767px) {
       body {
         margin: 0;
         padding: 0;
@@ -101,7 +102,6 @@
       padding-bottom: 20%;
       border-radius: 20px;
       box-shadow: 6px 5px 10px 2px rgba(6, 4, 4, 0.231);
-
       }
 
       .container img {
@@ -166,10 +166,69 @@
       background-color: rgb(4, 111, 114);
       }
 
-      }
+  }
+  /* ORDINATEURS & TABLETTES */
+  @media screen and (min-width: 768px) {
+  /* Burger menu */
+  .burger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    cursor: pointer;
+  }
 
-    /* ORDINATEURS & TABLETTES */
-    @media screen and (min-width: 768px) {
+  .burger-menu div {
+    width: 36px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    box-shadow: 0 0 8px rgba(1, 96, 103, 0.441);
+  }
+
+  /* Menu qui apparaît quand le burger est cliqué */
+  .menu-bar {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    right: 68%;
+    width: -100%;
+    margin: auto;
+  }
+
+  .menu-bar a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+  }
+
+  .menu-bar a:hover {
+    background-color: #b9b9b941;
+  }
+
+  /* Lorsque le menu est ouvert */
+  .burger-menu.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .burger-menu.active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
       body {
         margin: 0;
         padding: 0;
@@ -262,15 +321,15 @@
       body{
       background-color: rgb(4, 111, 114);
       }
-    }
+  }
   
   </style>
 </head>
 <body>
-  <div class="menu-bar" id="menuBar" style="display: flex;">
+  <div class="menu-bar" id="menuBar" style="display: none;">
+    <a href="#">TTECH™  | Orax inc</a>
     <a href="accueil.html">Accueil</a>
     <a href="index.html">Rejoindre</a>
-    <a href="#">TTECH™</a>
     <a href="#">Contact</a>
     <a href="faq.html">FAQ</a>
     <a href="#">Blog</a>
@@ -312,7 +371,7 @@
     </p>
     <p>
       
-      Chaque nombre individuel est un alphabet majuscule. Cesar detient la clé de chiffrement.
+      Chaque nombre individuel est un alphabet minuscule. Cesar detient la clé de chiffrement.
       “Chaque lettre est déplacée dans l’alphabet selon le chiffre qui lui a donné naissance”
     </p>
 
