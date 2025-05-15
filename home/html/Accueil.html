@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil | TTECH™</title>
-    <link rel="stylesheet" href="../style_css/acceuil.css">
-
+    <link rel="stylesheet" href="../style_css/acceuil.css" />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <!-- Bande de menu responsive -->
     <div class="menu-bar">
       <div class="nav">
         <div class="nav-links">
-          <a href="accueil.html">Accueil</a>
-          <a href="index.html">Rejoindre</a>
+          <a href="Accueil.html">Accueil</a>
+          <a href="../index.html">Rejoindre</a>
           <a href="a_propos.html">À propos de TTECH™</a>
           <a href="contact.html">Contact</a>
           <a href="faq.html">FAQ</a>
@@ -26,12 +26,12 @@
         </div>
       </div>
       <div class="nav-mobile" id="mobileMenu">
-        <a href="accueil.html">Accueil</a>
-        <a href="index.html">Rejoindre</a>
-        <a href="a_propos.html">À propos de TTECH™</a>
-        <a href="contact.html">Contact</a>
-        <a href="faq.html">FAQ</a>
-        <a href="blog.html">Blog</a>
+        <a href="accueil.html" id="burger">Accueil</a>
+        <a href="index.html" id="burger">Rejoindre</a>
+        <a href="a_propos.html" id="burger">À propos de TTECH™</a>
+        <a href="contact.html" id="burger">Contact</a>
+        <a href="faq.html" id="burger">FAQ</a>
+        <a href="blog.html" id="burger">Blog</a>
       </div>
     </div>
 
@@ -39,7 +39,7 @@
     <section class="sectionImg">
       <img
         class="logottech"
-        src="assets/logo-black.png"
+        src="../assets/logo-black.png"
         alt="Image Communauté TTECH™"
       />
     </section>
@@ -47,24 +47,45 @@
       <section class="section">
         <h2>Nos membres</h2>
         <div class="member-card">
-          <strong>Mawussi Yao Pierre – Fondateur</strong><br />
-          Ingénieur électronique, passionné par la microfabrication et les CPU
-          africains.
+          <a href="presentation.html" id="cartediv">
+            <strong>
+              Mawoussi Yao Pierre
+            </strong><br>
+            <small>
+              Ingénieur électronique, passionné par l'IA, la microfabrication de CPUs africains.
+            </small>
+        </a>
         </div>
 
         <div class="member-card">
-          <strong>Daté Dante Joel – Fondateur</strong><br />
-          Ingénieur électronique, passionné par la microfabrication et les CPU
-          africains.
+          <a href="presentation_1.html" id="cartediv">
+            <strong>
+              Date Dante Joel
+            </strong><br>
+            <small>
+              Ingénieur Logiciel, passionné par l'IA et la microfabrication de CPUs africains.
+            </small>
+        </a>
         </div>
 
         <div class="member-card">
-          <strong>Amira S.</strong><br />
-          Spécialiste en design PCB, leader de l’équipe des lycéens stagiaires.
+          <a href="presentation_1.html" id="cartediv">
+            <strong>
+              Adjogna Elysee Joel
+            </strong><br>
+            <small>
+              Jeunes volontaires passionné par l'IA et specialiste en prototypage et tests sur Proteus.
+            </small>
+        </a>
         </div>
+
         <div class="member-card">
-          <strong>Groupe Étudiant Fablab Lomé</strong><br />
-          Jeunes volontaires en prototypage et tests sur Proteus.
+          <a href="presentation.html" id="cartediv">
+            <strong>
+              Groupe Étudiant Fablab Lomé:
+            </strong>
+            Jeunes volontaires en prototypage et tests sur Proteus.
+        </a>
         </div>
       </section>
 
