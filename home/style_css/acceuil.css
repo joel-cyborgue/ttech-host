@@ -173,4 +173,154 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
 }
+/* FOOTER STYLES */
+.site-footer {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 40px 0 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 50px;
+  border-top: 3px solid #0a9e9e;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 15px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-section h3 {
+  color: #0a9e9e;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  position: relative;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-section h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #d3660d;
+}
+
+.footer-section p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-section ul li i {
+  margin-right: 10px;
+  color: #0a9e9e;
+  width: 20px;
+  text-align: center;
+}
+
+.footer-section ul li a {
+  color: #dddddd;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #0a9e9e;
+  padding-left: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #0a9e9e;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+  background-color: #1a1a1a;
+}
+
+.legal-links {
+  margin-top: 10px;
+}
+
+.legal-links a {
+  color: #aaaaaa;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.legal-links a:hover {
+  color: #0a9e9e;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+  
+  .footer-section h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+  
+  .footer-section ul li {
+    justify-content: center;
+  }
+}
 }
