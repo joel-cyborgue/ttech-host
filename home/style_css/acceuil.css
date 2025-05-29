@@ -328,4 +328,8 @@ body {
   .menu-bar a:hover {
     background-color: #b9b9b941;
   }
+
+  .burger-menu { /* Ensure burger icon is visible on desktop */
+    display: block; 
+  }
 }
