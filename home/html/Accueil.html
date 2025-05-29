@@ -8,30 +8,18 @@
     <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <!-- Bande de menu responsive -->
-    <div class="menu-bar">
-      <div class="nav">
-        <div class="nav-links">
-          <a href="../index.html">Rejoindre</a>
-          <a href="a_propos.html">À propos de TTECH™</a>
-          <a href="contact.html">Contact</a>
-          <a href="faq.html">FAQ</a>
-          <a href="blog.html">Blog</a>
-        </div>
-        <div class="burger" onclick="toggleMenu()">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-      <div class="nav-mobile" id="mobileMenu">
-        <a href="accueil.html" id="burger">Accueil</a>
-        <a href="index.html" id="burger">Rejoindre</a>
-        <a href="a_propos.html" id="burger">À propos de TTECH™</a>
-        <a href="contact.html" id="burger">Contact</a>
-        <a href="faq.html" id="burger">FAQ</a>
-        <a href="blog.html" id="burger">Blog</a>
-      </div>
+    <div class="burger-menu" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="menu-bar" id="menuBar" style="display: none">
+      <a href="Accueil.html">TTECH™ | Orax inc</a>
+      <a href="#">Meeting & Congress</a>
+      <a href="../index.html">joindre TTECH™</a>
+      <a href="Evenement.html">Evenement</a>
+      <a href="faq.html">FAQ</a>
+      <a href="#">Blog</a>
     </div>
 
     <!-- Contenu principal -->
@@ -122,7 +110,11 @@
     </div>
     <script>
       function toggleMenu() {
-        document.getElementById("mobileMenu").classList.toggle("show");
+        const menuBar = document.getElementById("menuBar");
+        const burgerMenu = document.querySelector(".burger-menu");
+        menuBar.style.display =
+          menuBar.style.display === "flex" ? "none" : "flex";
+        burgerMenu.classList.toggle("active");
       }
     </script>
 

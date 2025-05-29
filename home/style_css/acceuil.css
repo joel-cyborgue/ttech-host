@@ -1,86 +1,8 @@
-/* BARRE DE MENU */
-.menu-bar {
-  background-color: #0a9e9e;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
+/* Ensure 'a' tags globally do not have text decoration if not specified by components */
 a {
-  text-decoration: none;
-}
-
-.menu-bar .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  height: 60px;
-}
-
-.menu-bar .nav a {
-  color: white;
-  text-decoration: none;
-  margin-right: 20px;
-  font-weight: bold;
-}
-
-.menu-bar .nav a:hover {
-  color: cyan;
-}
-
-.menu-bar .nav-links {
-  display: flex;
-}
-
-.burger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.burger div {
-  width: 30px;
-  height: 2px;
-  background-color: white;
-  margin: 4px;
-  border-radius: 3px;
-}
-
-.nav-mobile {
-  display: none;
-  flex-direction: column;
-  background-color: #0a9e9e;
-  transition: 2s;
-}
-
-a {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: white;
-}
-.nav-mobile a {
-  padding: 10px 20px;
-  border-top: 1px solid #0570696e;
-}
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .menu-bar .nav-links {
-    display: none;
-  }
-
-  .burger {
-    display: flex;
-  }
-
-  .nav-mobile {
-    display: none;
-  }
-
-  .nav-mobile.show {
-    display: flex;
-  }
+  text-decoration: none; /* This was present before, keeping it generally */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; /* This was also present */
+  /* color: white; /* This was too general, removed. Links should inherit or be specific. */
 }
 
 .container {
@@ -323,4 +245,87 @@ body {
     justify-content: center;
   }
 }
+
+/* Burger menu icon from index.css */
+.burger-menu {
+  position: fixed; /* Ensures it stays in place during scroll */
+  top: 20px;
+  left: 20px;
+  z-index: 1001; /* Higher z-index than typical elements */
+  cursor: pointer;
+}
+
+.burger-menu div {
+  width: 36px;
+  height: 5px;
+  /* MODIFIED: Changed from white to #333 for better visibility on light backgrounds */
+  background-color: #333; 
+  margin: 6px 0;
+  transition: 0.4s;
+  /* Consider if this box-shadow is desirable for acceuil.css theme */
+  box-shadow: 0 0 8px rgba(1, 96, 103, 0.441); 
+  border-radius: 2px; /* Taken from phone-specific style in index.css but good for all sizes */
+}
+
+/* Menu bar (panel) from index.css */
+.menu-bar { /* This is the ID 'menuBar' in HTML, but class from index.css */
+  display: none; /* Initially hidden, shown by JS */
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute; /* Positioned relative to nearest positioned ancestor or body */
+  top: 70px; /* Adjusted from 50px to give more space from burger icon */
+  left: 20px; /* Align with burger menu's left */
+  z-index: 1000; /* Below burger icon but above other content */
+  /* background-color will be set in media queries */
+  /* width will be set in media queries */
+}
+
+.menu-bar a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+/* Burger animation from index.css */
+.burger-menu.active div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-menu.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* For PHONE (max-width: 767px) from index.css */
+@media screen and (max-width: 767px) {
+  .menu-bar { /* This is the ID 'menuBar' in HTML */
+    background-color: #f1f1f7;
+    width: 200px; 
+    /* margin: auto; /* Centering if left/right are 0, but we use fixed left */
+  }
+
+  .menu-bar a:hover {
+    background-color: #ddd;
+  }
+}
+
+/* For DESKTOPS & TABLETS (min-width: 768px) from index.css */
+@media screen and (min-width: 768px) {
+  .menu-bar { /* This is the ID 'menuBar' in HTML */
+    background-color: white; 
+    width: 250px; /* Adjusted from index.css's unusual width calculation */
+  }
+
+  .menu-bar a:hover {
+    background-color: #b9b9b941;
+  }
 }
