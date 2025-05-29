@@ -23,16 +23,18 @@ h2 {
 }
 
 .member-card {
-  background: white;
-  box-shadow: 0 0 10px rgba(71, 88, 88, 0.3);
+  background-color: rgba(255, 255, 255, 0.2); /* MORE Transparent white */
+  backdrop-filter: blur(5px);                 /* Blur effect */
+  -webkit-backdrop-filter: blur(5px);         /* Safari compatibility */
+  box-shadow: 0 0 10px rgba(71, 88, 88, 0.15);/* Adjusted shadow */
   border-radius: 5px;
   padding: 15px;
   margin: 10px 0;
-  border-left: 5px solid #0a9e9e;
+  border-left: 5px solid rgba(10, 158, 158, 0.3); /* Transparent border */
 }
 
 .member-card:hover {
-  border-left: 5px solid #d3660d;
+  border-left: 5px solid rgba(211, 102, 13, 0.5); /* Transparent version of #d3660d */
 }
 #burger:hover {
   background-color: rgba(7, 182, 185, 0.445);
@@ -329,7 +331,25 @@ body {
     background-color: #b9b9b941;
   }
 
-  .burger-menu { /* Ensure burger icon is visible on desktop */
-    display: block; 
+  body {
+    background-image: url("../assets/conference_1.jpg");
+    background-attachment: fixed;
+    background-size: 100%; /* Or 'cover' or other appropriate size */
+    background-repeat: no-repeat;
+    /* Assuming margin: 0; and font-family are handled globally or are not strictly needed here based on current testing */
+  }
+
+  .burger-menu {
+    display: block !important;
+    width: 40px !important;       /* Force arbitrary visible size */
+    height: 40px !important;      /* Force arbitrary visible size */
+    background-color: blue !important;/* New debug color for this test */
+    transform: none !important;     /* Reset any potential transforms */
+    position: fixed !important;   /* Re-affirm position and stacking context */
+    top: 20px !important;         /* Re-affirm position */
+    left: 20px !important;        /* Re-affirm position */
+    z-index: 9999 !important;     /* Extremely high z-index */
+    opacity: 1 !important;        /* Force opacity */
+    visibility: visible !important; /* Force visibility */
   }
 }
