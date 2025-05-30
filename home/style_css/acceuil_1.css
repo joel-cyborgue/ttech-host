@@ -8,7 +8,7 @@
   body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url("../assets/bannier.jpg");
+    background-image: url("../assets/withbot_2.jpg");
     background-attachment: fixed;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -148,6 +148,7 @@
   .menu-bar a:hover {
     background-color: #ddd;
   }
+  
 }
 
 /******************* DESKTOPS & TABLETS (min-width: 768px) from index.css ********************/
@@ -159,7 +160,28 @@
     width: 5%;
   }
 
-  .footer-container {
+  
+  .menu-bar {
+    background-color: white;
+    width: 250px;
+  }
+
+  .menu-bar a:hover {
+    background-color: #b9b9b941;
+  }
+
+  body {
+    background-image: url("../assets/withbot_2.jpg");
+    background-attachment: fixed;
+    background-size: 100%; /* Or 'cover' or other appropriate size */
+    background-repeat: no-repeat;
+    /* Assuming margin: 0; and font-family are handled globally or are not strictly needed here based on current testing */
+  }
+}
+
+/***************************************** COMMON STYLES *****************************************/
+
+.footer-container {
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -180,26 +202,6 @@
   .footer-section ul li {
     justify-content: center;
   }
-  .menu-bar {
-    background-color: white;
-    width: 250px;
-  }
-
-  .menu-bar a:hover {
-    background-color: #b9b9b941;
-  }
-
-  body {
-    background-image: url("../assets/bannier.jpg");
-    background-attachment: fixed;
-    background-size: 100%; /* Or 'cover' or other appropriate size */
-    background-repeat: no-repeat;
-    /* Assuming margin: 0; and font-family are handled globally or are not strictly needed here based on current testing */
-  }
-}
-
-/***************************************** COMMON STYLES *****************************************/
-
 
 /* Burger animation from index.css */
   .burger-menu.active div:nth-child(1) {
@@ -298,7 +300,10 @@ h2 {
 }
 
 .member-card:hover {
+  background-color: rgba(255, 255, 255, 0.575); /* MORE Transparent white */
+  backdrop-filter: blur(8px); /* Blur effect */
   border-left: 5px solid rgb(227, 104, 3); /* Transparent version of #d3660d */
+  transition: 1s;
 }
 #burger:hover {
   background-color: rgba(7, 182, 185, 0.445);
