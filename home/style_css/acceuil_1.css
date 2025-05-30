@@ -1,0 +1,343 @@
+/*********************** PHONE (max-width: 767px) from index.css ******************************/
+@media screen and (max-width: 767px) {
+  .logottech {
+    margin-top: 8%;
+    height: 30%;
+    width: 30%;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../assets/bannier.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  /* FOOTER STYLES */
+  .site-footer {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 40px 0 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-top: 50px;
+    border-top: 3px solid #0a9e9e;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .footer-logo {
+    width: 150px;
+    margin-bottom: 15px;
+    filter: brightness(0) invert(1);
+  }
+
+  .footer-section h3 {
+    color: #0a9e9e;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    position: relative;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .footer-section h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #d3660d;
+  }
+
+  .footer-section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #dddddd;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-section ul li i {
+    margin-right: 10px;
+    color: #0a9e9e;
+    width: 20px;
+    text-align: center;
+  }
+
+  .footer-section ul li a {
+    color: #dddddd;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .footer-section ul li a:hover {
+    color: #0a9e9e;
+    padding-left: 5px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    background-color: #0a9e9e;
+    transform: translateY(-3px);
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    background-color: #1a1a1a;
+  }
+
+  .legal-links {
+    margin-top: 10px;
+  }
+
+  .legal-links a {
+    color: #aaaaaa;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .legal-links a:hover {
+    color: #0a9e9e;
+  }
+
+  .menu-bar {
+    background-color: #f1f1f7;
+    width: 200px;
+  }
+
+  .menu-bar a:hover {
+    background-color: #ddd;
+  }
+}
+
+/******************* DESKTOPS & TABLETS (min-width: 768px) from index.css ********************/
+@media screen and (min-width: 768px) {
+  .logottech {
+    visibility: hidden;
+    margin-top: 5%;
+    height: 5%;
+    width: 5%;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-section h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-section ul li {
+    justify-content: center;
+  }
+  .menu-bar {
+    background-color: white;
+    width: 250px;
+  }
+
+  .menu-bar a:hover {
+    background-color: #b9b9b941;
+  }
+
+  body {
+    background-image: url("../assets/bannier.jpg");
+    background-attachment: fixed;
+    background-size: 100%; /* Or 'cover' or other appropriate size */
+    background-repeat: no-repeat;
+    /* Assuming margin: 0; and font-family are handled globally or are not strictly needed here based on current testing */
+  }
+}
+
+/***************************************** COMMON STYLES *****************************************/
+
+
+/* Burger animation from index.css */
+  .burger-menu.active div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .burger-menu.active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.active div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .video-section iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+.burger-menu {
+  position: fixed; /* Ensures it stays in place during scroll */
+  top: 20px;
+  left: 20px;
+  z-index: 1001; /* Higher z-index than typical elements */
+  cursor: pointer;
+}
+
+.burger-menu div {
+  width: 36px;
+  height: 4px;
+  /* MODIFIED: Changed from white to #333 for better visibility on light backgrounds */
+  background-color: hsl(0, 0%, 100%);
+  margin: 6px 0;
+  transition: 0.4s;
+  /* Consider if this box-shadow is desirable for acceuil.css theme */
+  box-shadow: 0 0 8px rgba(1, 96, 103, 0.441);
+  
+}
+
+/* Menu bar (panel) from index.css */
+.menu-bar {
+  /* This is the ID 'menuBar' in HTML, but class from index.css */
+  display: none; /* Initially hidden, shown by JS */
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute; /* Positioned relative to nearest positioned ancestor or body */
+  top: 70px; /* Adjusted from 50px to give more space from burger icon */
+  left: 20px; /* Align with burger menu's left */
+  z-index: 1000; /* Below burger icon but above other content */
+  /* background-color will be set in media queries */
+  /* width will be set in media queries */
+}
+
+.menu-bar a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 4%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #222222;
+  border-bottom: 1px solid #0aa0a02f;
+  padding-bottom: 5px;
+}
+
+.sectionImg {
+  padding-top: 10%;
+  text-align: center;
+}
+
+.member-card {
+  background-color: rgba(255, 255, 255, 0.2); /* MORE Transparent white */
+  backdrop-filter: blur(5px); /* Blur effect */
+  -webkit-backdrop-filter: blur(5px); /* Safari compatibility */
+  box-shadow: 0 0 10px rgba(71, 88, 88, 0.15); /* Adjusted shadow */
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 5px solid rgb(5, 178, 178); /* Transparent border */
+}
+
+.member-card:hover {
+  border-left: 5px solid rgb(227, 104, 3); /* Transparent version of #d3660d */
+}
+#burger:hover {
+  background-color: rgba(7, 182, 185, 0.445);
+  transition: 800ms;
+}
+
+#cartediv {
+  color: #222222;
+}
+
+.video-section {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.video-section iframe {
+  width: 100%;
+  height: 468px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.link-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.link-section a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00bcd4;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.link-section a:hover {
+  background-color: #0097a7;
+}
