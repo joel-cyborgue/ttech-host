@@ -3,61 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accès à la Communauté TTECH™</title>
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./style_css/index.css" />
+    <title>FAQ | TTECH™</title>
+    <link rel="stylesheet" href="../style_css/acceuil_1.css" />     <!-- Assuming we will reuse acceuil_1.css for now, or create faq.css later -->
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <div class="menu-bar" id="menuBar" style="display: none">
-      <a href="./html/Accueil.html">TTECH™ | Orax inc</a>
-      <a href="#">Meeting & Congress</a>
-      <a href="index.html">joindre TTECH™</a>
-      <a href="Evenement.html">Evenement</a>
-      <a href="faq.html">FAQ</a>
-      <a href="#">Blog</a>
-    </div>
-
     <div class="burger-menu" onclick="toggleMenu()">
       <div></div>
       <div></div>
       <div></div>
     </div>
-
-    <div class="container1">
-      <h1>Casse-tête d’entrée</h1>
-      <p>> Bienvenue !</p>
-      <p>
-        Écrivez un programme dans langage de votre choix qui calcule et affiche
-        les termes de la suite de Fibonacci du 5ᵉ au 15ᵉ terme. Ensuite,
-        concaténez tous ces nombres sans espace, sans tiret.
-      </p>
-      <p>
-        Chaque nombre individuel est un alphabet minuscule. Cesar detient la clé
-        de chiffrement.“Chaque lettre est déplacée dans l’alphabet selon le
-        chiffre qui lui a donné naissance”
-      </p>
-
-      <p>
-        Ce mot final constitue la clé secrète (mot de passe). Si vous trouvez la
-        bonne clé et la collez dans le champ d’accès, vous obtiendrez
-        automatiquement le lien privé vers la grande communauté.
-      </p>
-      ---
+    <div class="menu-bar" id="menuBar" style="display: none">
+      <a href="Accueil.html">TTECH™ | Orax inc</a>
+      <a href="#">Meeting & Congress</a>
+      <a href="../index.html">joindre TTECH™</a>
+      <a href="Evenement.html">Evenement</a>
+      <a href="faq.html">FAQ</a>
+      <a href="#">Blog</a>
     </div>
 
-    <div class="container">
-      <img src="./assets/logo-black.png" alt="Image Communauté TTECH™" />
-      <h2>TTECH™ COMMUNITY</h2>
-      <p>Entrez la clé du casse-tête</p>
-      <input
-        type="text"
-        id="passwordInput"
-        placeholder="Entre ta clé ici..."
-        required
+    <!-- Contenu principal -->
+    <section class="sectionImg">
+      <img
+        class="logottech"
+        src="../assets/logo-no-background.png"
+        alt="Image Communauté TTECH™"
       />
-      <br /><br />
-      <button onclick="checkPassword()">Valider</button>
-      <p id="message"></p>
+    </section>
+    <div class="container">
+      <section class="section">
+        <h2>Foire Aux Questions (FAQ)</h2>
+        
+        <div class="faq-item">
+          <h3>Comment puis-je rejoindre TTECH™ ?</h3>
+          <p>Pour rejoindre TTECH™, vous pouvez visiter notre page 'joindre TTECH™' accessible depuis le menu de navigation ou l'index. Vous y trouverez toutes les informations nécessaires sur le processus d'adhésion.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Quels sont les avantages d'être membre de TTECH™ ?</h3>
+          <p>En tant que membre de TTECH™, vous avez accès à une communauté dynamique de passionnés de technologie, des ateliers de formation, des événements exclusifs, et la possibilité de collaborer sur des projets innovants.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Y a-t-il des frais d'adhésion ?</h3>
+          <p>Les informations concernant les frais d'adhésion ou contributions sont détaillées sur notre page d'inscription. Nous nous efforçons de rendre l'adhésion accessible à tous.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>TTECH™ organise-t-il des formations ou des ateliers ?</h3>
+          <p>Oui, TTECH™ organise régulièrement des ateliers et des formations sur diverses technologies et sujets d'innovation. Consultez notre section 'Evenement' pour le calendrier à venir.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Puis-je proposer un projet ou une idée à TTECH™ ?</h3>
+          <p>Absolument ! Nous encourageons nos membres à proposer des projets et des idées. TTECH™ est une plateforme collaborative visant à soutenir l'innovation.</p>
+        </div>
+
+      </section>
     </div>
     <script>
       function toggleMenu() {
@@ -67,19 +69,67 @@
           menuBar.style.display === "flex" ? "none" : "flex";
         burgerMenu.classList.toggle("active");
       }
-
-      function checkPassword() {
-        const correctPassword = "fjpbfdbfhjjprbhhdfffnn"; //ou en maj
-        const input = document.getElementById("passwordInput").value.trim();
-        const message = document.getElementById("message");
-
-        if (input === correctPassword) {
-          window.location.href = "./html/Acces-unloked.html";
-        } else {
-          message.textContent = "Mot de passe incorrect. Essaie encore !";
-          message.style.color = "red";
-        }
-      }
     </script>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <img
+            src="../assets/logo-no-background.png"
+            alt="TTECH Logo"
+            class="footer-logo"
+          />
+          <p>Pionniers de l'innovation technologique africaine depuis 2023.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Explorer</h3>
+          <ul>
+            <li><a href="../html/Accueil.html">Accueil</a></li>
+            <li><a href="../html/a_propos.html">À propos</a></li>
+            <li><a href="../html/blog.html">Blog Tech</a></li>
+            <li><a href="../html/faq.html">Foire aux questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Ressources</h3>
+          <ul>
+            <li><a href="#">Documentation TCHIP-1</a></li>
+            <li><a href="#">Tutoriels Proteus</a></li>
+            <li><a href="#">Bibliothèque de composants</a></li>
+            <li><a href="#">Calendrier des événements</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Rapide</h3>
+          <ul class="contact-info">
+            <li><i class="fas fa-envelope"></i> contact@ttech.tg</li>
+            <li><i class="fas fa-map-marker-alt"></i> Lomé, Togo</li>
+            <li><i class="fas fa-users"></i> Rejoindre notre FabLab</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 TTECH™. Tous droits réservés - Conçu avec
+          <i class="fas fa-heart" style="color: #d3660d"></i> en Afrique
+        </p>
+        <div class="legal-links">
+          <a href="../html/politique.html">Politique de confidentialité</a>
+          <a href="../html/conditions.html">Conditions d'utilisation</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
