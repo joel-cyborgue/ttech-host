@@ -1,53 +1,53 @@
-# TTECH™ Community Website
+# Site web communautaire TTECH™
 
-Welcome to the TTECH™ Community Website project! TTECH™ is a community dedicated to fostering technological innovation in Africa, with a focus on areas like custom CPU and FPGA development, and providing training and workshops.
+Bienvenue sur le site web communautaire TTECH™ ! TTECH™ est une communauté dédiée à la promotion de l'innovation technologique en Afrique, axée sur des domaines tels que le développement de CPU et de FPGA personnalisés, et proposant des formations et des ateliers.
 
-## Entry Puzzle
+## Puzzle d'entrée
 
-The website features an entry puzzle on its landing page (`home/index.html`) to grant access to the main community content. The puzzle involves:
+La page d'accueil du site web (`home/index.html`) propose un puzzle d'entrée donnant accès au contenu principal de la communauté. Ce puzzle consiste à :
 
-1.  Calculating the Fibonacci sequence terms from the 5th to the 15th term.
-2.  Concatenating these numbers together without spaces or hyphens.
-3.  Using each digit of the concatenated number as a shift value for a Caesar cipher to encrypt a corresponding letter (details in `home/index.html`). The resulting encrypted string is the password.
+1. Calculer les termes de la suite de Fibonacci du 5e au 15e terme.
+2. Concaténer ces nombres sans espaces ni traits d'union.
+3. Utiliser chaque chiffre du nombre concaténé comme valeur de décalage pour un chiffrement de César afin de chiffrer la lettre correspondante (détails dans `home/index.html`). La chaîne chiffrée résultante constitue le mot de passe.
 
-## Website Content Overview
+## Présentation du contenu du site web
 
-Once accessed, the website (`home/html/Accueil.html`) provides information about:
+Une fois accessible, le site web (`home/html/Accueil.html`) fournit des informations sur :
 
-*   **Nos membres:** Showcasing key members of the TTECH™ community and their expertise.
-*   **Historique de nos Réussites:** Highlighting past achievements, such as:
-    *   Prototyping a calculator from scratch using African-made components (2023).
-    *   Developing a functional mini-analog oscilloscope by students (2024).
-    *   The planned launch of the "TCHIP-1" Open Source CPU project (2025).
-*   **Congrès et Événements:** Listing upcoming events, including:
-    *   Participation in the Salon des Makers – Lomé (April 2025).
-    *   Organization of the 1st TTECH™ Hackathon around African FPGAs (July 2025).
-    *   "Low-Tech CPU Design" Conference in Aného (December 2025).
+* **Nos membres** : Présentation des membres clés de la communauté TTECH™ et de leur expertise.
+* **Historique de nos réussites** : Mise en avant des réalisations passées, telles que :
+* Prototypage d'une calculatrice à partir de zéro avec des composants fabriqués en Afrique (2023).
+* Développement d'un mini-oscilloscope analogique fonctionnel par des étudiants (2024).
+* Lancement prévu du projet de processeur open source « TCHIP-1 » (2025).
+* **Congrès et événements** : Liste des événements à venir, notamment :
+* Participation au Salon des Makers – Lomé (avril 2025).
+* Organisation du 1er hackathon TTECH™ autour des FPGA africains (juillet 2025).
+* Conférence « Conception de CPU Low-Tech » à Aného (décembre 2025).
 
-## Technologies Used
+## Technologies utilisées
 
-*   HTML
-*   CSS
-*   JavaScript
+* HTML
+* CSS
+* JavaScript
 
-## Project Structure
+## Structure du projet
 
-The project is organized as follows:
+Le projet est organisé comme suit :
 
 ```
 .
 ├── home/
-│   ├── assets/         # Images, icons, and other static assets
-│   ├── html/           # HTML files for different pages
-│   ├── javascript/     # JavaScript files
-│   ├── style_css/      # CSS stylesheets
-│   └── index.html      # Landing page with the entry puzzle
-├── .firebaserc         # Firebase configuration
-├── .github/            # GitHub Actions workflows
-├── firebase.json       # Firebase hosting configuration
-└── README.md           # This file
+│ ├── assets/ # Images, icônes et autres ressources statiques
+│ ├── html/ # Fichiers HTML pour différentes pages
+│ ├── javascript/ # Fichiers JavaScript
+│ ├── style_css/ # Feuilles de style CSS
+│ └── index.html # Page d'accueil avec le puzzle d'entrée
+├── .firebaserc # Configuration de Firebase
+├── .github/ # Workflows GitHub Actions
+├── firebase.json # Configuration de l'hébergement Firebase
+└── README.md # Ce fichier
 ```
 
 ## Vision
 
-TTECH™ aims to be at the forefront of African technological innovation, empowering individuals and communities through education and open-source hardware development.
+TTECH™ a pour objectif d'être à la pointe de l'innovation technologique africaine et de donner aux individus les moyens d'agir et les communautés par le biais de l’éducation et du développement de matériel open source.
