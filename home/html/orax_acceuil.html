@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil | TTECH™</title>
-    <link rel="stylesheet" href="../style_css/orax_acceuil.css" />
+    <title>Accueil | Orax Inc.</title>
+    <link rel="stylesheet" href="../style_css/acceuil_1.css" />
     <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
@@ -14,9 +14,9 @@
       <div></div>
     </div>
     <div class="menu-bar" id="menuBar" style="display: none">
-      <a href="Accueil.html">TTECH™ | Orax inc</a>
+      <a href="orax_acceuil.html">Orax Inc. | TTECH™</a>
       <a href="#">Meeting & Congress</a>
-      <a href="../index.html">joindre TTECH™</a>
+      <a href="../index.html">joindre Orax Inc.</a>
       <a href="Evenement.html">Evenement</a>
       <a href="faq.html">FAQ</a>
       <a href="#">Blog</a>
@@ -24,26 +24,61 @@
 
     <!-- Contenu principal -->
     <section class="sectionImg">
-      <img
-        class="logottech"
-        src="../assets/logo-no-background.png"
-        alt="Image Communauté TTECH™"
-      />
+
     </section>
     <div class="container">
+      <!-- Projets en cours Section - Commented out for Orax
       <section class="section">
-
-        <h2>Projots en cours</h2>
+        <h1>Projets en cours</h1>
         <div class="member-card">
-          <a href="presentation.html" id="cartediv">
-            <strong> Mawoussi Yao Pierre </strong><br />
+          <a href="https://github.com/joel-cyborgue/Processeurs" id="cartediv">
+            <strong> Electronique </strong><br />
             <small>
-              Ingénieur électronique, passionné par l'IA, la microfabrication de
-              CPUs africains.
+              Conception d'une calculatrice 📱 From scratch, A partir de composants numerique de base.
             </small>
           </a>
         </div>
 
+        <div class="member-card">
+          <a href="https://github.com/joel-cyborgue/Processeurs" id="cartediv">
+            <strong> Programmation (IA)</strong><br />
+            <small>
+              Conception / finetune de model CNN de models de vision par ordinateur.
+            </small>
+          </a>
+        </div>
+
+        <div class="member-card">
+          <a href="https://github.com/joel-cyborgue/ttech-host" id="cartediv">
+            <strong> Programmation (site - web)</strong><br />
+            <small>
+              Contribution  de developpement volontaire du site officiel TTECH™ (ce site).
+              cliquez pour voir le depot GitHub !
+            </small>
+          </a>
+        </div>
+
+        <div class="add-project">
+          <a href="ajouter_projet.html" id="cartediv">
+            <strong> + Ajouter un nouveau projet </strong>
+          </a>
+        </div>
+
+        <script>
+          // Script pour le bouton "Ajouter un nouveau projet"
+          document
+            .querySelector(".add-project a")
+            .addEventListener("click", function (event) {
+              event.preventDefault();
+              alert("Fonctionnalité à venir !");
+            });
+        </script>
+      </section>
+      -->
+      <!-- Contenu spécifique à Orax à ajouter ici pour Projets en cours -->
+
+      <!-- Nos membres Section - Commented out for Orax
+      <section class="section">
         <h2>Nos membres</h2>
         <div class="member-card">
           <a href="presentation.html" id="cartediv">
@@ -81,18 +116,23 @@
             Jeunes volontaires en prototypage et tests sur Proteus.
           </a>
         </div>
-
-        <div class="video-section">
-          <!-- Intégration YouTube corrigée -->
-          <iframe
-            src="https://www.youtube.com/embed/A7wkKH8Nfco"
-            title="Événement TTECH en direct"
-            allowfullscreen
-          >
-          </iframe>
-        </div>
       </section>
+      -->
+      <!-- Contenu spécifique à Orax à ajouter ici pour Nos membres -->
 
+      <!-- Video Section - Commented out for Orax
+      <div class="video-section">
+        <iframe
+          src="https://www.youtube.com/embed/A7wkKH8Nfco"
+          title="Événement TTECH en direct"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+      -->
+      <!-- Contenu spécifique à Orax à ajouter ici pour Video -->
+
+      <!-- Historique de nos Réussites Section - Commented out for Orax
       <section class="section">
         <h2>Historique de nos Réussites</h2>
         <ul>
@@ -107,7 +147,10 @@
           <li>2025 : Lancement du projet de CPU Open Source “TCHIP-1”.</li>
         </ul>
       </section>
+      -->
+      <!-- Contenu spécifique à Orax à ajouter ici pour Historique -->
 
+      <!-- Congrès et Événements Section - Commented out for Orax
       <section class="section">
         <h2>Congrès et Événements</h2>
         <ul>
@@ -119,6 +162,8 @@
           <li>Décembre 2025 : Conférence “Low-Tech CPU Design” à Aného</li>
         </ul>
       </section>
+      -->
+      <!-- Contenu spécifique à Orax à ajouter ici pour Congrès et Événements -->
     </div>
     <script>
       function toggleMenu() {
@@ -134,11 +179,11 @@
       <div class="footer-container">
         <div class="footer-section">
           <img
-            src="../assets/logo-no-background.png"
-            alt="TTECH Logo"
+            src="../assets/orax new look.png"
+            alt="Orax Logo"
             class="footer-logo"
           />
-          <p>Pionniers de l'innovation technologique africaine depuis 2023.</p>
+          <p>Orax Inc. - Votre partenaire technologique.</p>
           <div class="social-icons">
             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             <a href="#" aria-label="LinkedIn"
@@ -152,9 +197,9 @@
         <div class="footer-section">
           <h3>Explorer</h3>
           <ul>
-            <li><a href="../html/accueil.html">Accueil</a></li>
-            <li><a href="../html/a_propos.html">À propos</a></li>
-            <li><a href="../html/blog.html">Blog Tech</a></li>
+            <li><a href="../html/orax_acceuil.html">Accueil</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Blog Tech</a></li>
             <li><a href="../html/faq.html">Foire aux questions</a></li>
           </ul>
         </div>
@@ -162,26 +207,26 @@
         <div class="footer-section">
           <h3>Ressources</h3>
           <ul>
-            <li><a href="#">Documentation TCHIP-1</a></li>
-            <li><a href="#">Tutoriels Proteus</a></li>
-            <li><a href="#">Bibliothèque de composants</a></li>
-            <li><a href="#">Calendrier des événements</a></li>
+            <li><a href="#">Documentation Produit</a></li>
+            <li><a href="#">Tutoriels</a></li>
+            <li><a href="#">Ressources Techniques</a></li>
+            <li><a href="#">Nos Événements</a></li>
           </ul>
         </div>
 
         <div class="footer-section">
           <h3>Contact Rapide</h3>
           <ul class="contact-info">
-            <li><i class="fas fa-envelope"></i> contact@ttech.tg</li>
+            <li><i class="fas fa-envelope"></i> contact@orax.inc</li>
             <li><i class="fas fa-map-marker-alt"></i> Lomé, Togo</li>
-            <li><i class="fas fa-users"></i> Rejoindre notre FabLab</li>
+            <li><i class="fas fa-users"></i> Nous rejoindre</li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>
-          &copy; 2025 TTECH™. Tous droits réservés - Conçu avec
+          &copy; 2025 Orax Inc. Tous droits réservés - Conçu avec
           <i class="fas fa-heart" style="color: #d3660d"></i> en Afrique
         </p>
         <div class="legal-links">
