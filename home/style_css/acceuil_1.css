@@ -119,7 +119,7 @@
 }
 
 .burger-menu div {
-  width: 38px;
+  width: 36px;
   height: 3px;
   border-radius: 2px;
   /* MODIFIED: Changed from white to #333 for better visibility on light backgrounds */
@@ -212,7 +212,7 @@ h1 {
 .add-project:hover{
   background-color: rgba(255, 255, 255, 0.575); /* MORE Transparent white */
   backdrop-filter: blur(8px); /* Blur effect */
-  border-left: 5px solid rgb(197, 3, 227); /* Transparent version of #d3660d */
+  border-left: 5px solid rgb(160, 4, 184); /* Transparent version of #d3660d */
   transition: 300ms;
 }
 
