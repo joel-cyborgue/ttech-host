@@ -209,12 +209,20 @@ h1 {
   align-items: center;
 }
 
+.add-project:hover{
+  background-color: rgba(255, 255, 255, 0.575); /* MORE Transparent white */
+  backdrop-filter: blur(8px); /* Blur effect */
+  border-left: 5px solid rgb(197, 3, 227); /* Transparent version of #d3660d */
+  transition: 300ms;
+}
+
 .member-card:hover {
   background-color: rgba(255, 255, 255, 0.575); /* MORE Transparent white */
   backdrop-filter: blur(8px); /* Blur effect */
   border-left: 5px solid rgb(227, 104, 3); /* Transparent version of #d3660d */
   transition: 1s;
 }
+
 #burger:hover {
   background-color: rgba(7, 182, 185, 0.445);
   transition: 800ms;
