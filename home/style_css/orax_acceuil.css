@@ -8,10 +8,12 @@
   body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url("../assets/withbot_2.jpg");
+    background-image: url("../assets/orax\ new\ look.png");
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: 80%;
     background-repeat: no-repeat;
+    background-position-x : 90px;
+    background-position-y: -40px;
   }
   /* FOOTER STYLES */
   .site-footer {
@@ -279,7 +281,7 @@ h2 {
 }
 
 .sectionImg {
-  padding-top: 10%;
+  padding-top: 50%;
   text-align: center;
 }
 
