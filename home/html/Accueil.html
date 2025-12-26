@@ -1,224 +1,251 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil | TTECH™</title>
-    <link rel="stylesheet" href="../style_css/acceuil_1.css" />
-    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
-  </head>
-  <body>
-    <div class="burger-menu" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <div class="menu-bar" id="menuBar" style="display: none">
-      <a href="Accueil.html">TTECH™ | Orax inc</a>
-      <a href="orax_acceuil.html">Visiter Orax Inc.</a>
-      <a href="#">Meeting & Congress</a>
-      <a href="../index.html">joindre TTECH™</a>
-      <a href="Evenement.html">Evenement</a>
-      <a href="faq.html">FAQ</a>
-    </div>
 
-    <!-- Contenu principal -->
-    <section class="sectionImg">
-      
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil | TTECH™</title>
+  <link rel="stylesheet" href="../style_css/acceuil_1.css" />
+  <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+  <div class="burger-menu" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="menu-bar" id="menuBar" style="display: none">
+    <a href="Accueil.html">TTECH™ | Orax inc</a>
+    <a href="orax_acceuil.html">Visiter Orax Inc.</a>
+    <a href="#">Meeting & Congress</a>
+    <a href="../index.html">joindre TTECH™</a>
+    <a href="Evenement.html">Evenement</a>
+    <a href="faq.html">FAQ</a>
+  </div>
+
+  <!-- Contenu principal -->
+  <section class="sectionImg">
+
+  </section>
+  <div class="container">
+
+    <section class="hero">
+      <div class="glass">
+        <h1>Bienvenue chez <span>TTECH™</span></h1>
+        <p>La communauté des ingénieurs logiciels & électroniques du futur</p>
+        <a href="../index.html" class="cta">Rejoindre la communauté</a>
+      </div>
     </section>
-    <div class="container">
-      <section class="section">
-        <h1>Projets en cours</h1>
-        <div class="member-card">
-          <a href="https://github.com/joel-cyborgue/Processeurs" id="cartediv">
-            <strong> Electronique </strong><br />
-            <small>
-              Conception d'une calculatrice 📱 From scratch, A partir de composants numerique de base.
-            </small>
-          </a>
-        </div>
 
-        <div class="member-card">
-          <a href="https://github.com/joel-cyborgue/Processeurs" id="cartediv">
-            <strong> Programmation (IA)</strong><br />
-            <small>
-              Conception / finetune de model CNN de models de vision par ordinateur.
-            </small>
-          </a>
-        </div>
+    <section class="section">
 
-        <div class="member-card">
-          <a href="https://github.com/joel-cyborgue/ttech-host" id="cartediv">
-            <strong> Programmation (site - web)</strong><br />
-            <small>
-              Contribution  de developpement volontaire du site officiel TTECH™ (ce site).
-              cliquez pour voir le depot GitHub !
-            </small>
-          </a>
-        </div>
+      <div class="contenaire">
+        <h1 class="h">Projets en cours</h1>
 
-        <!-- Ajout d'un bouton ajouter nouveau projet -->
-        <div class="add-project">
-          <a href="ajouter_projet.html" id="cartediv">
-            <strong> + Ajouter un nouveau projet </strong>
-          </a>
-        </div>
+        <div class="projects-wrapper">
+          <div class="cards">
+            <div class="heads">
+              <p>Électronique</p>
+              <img src="../assets/logo-color.png" alt="icone">
+            </div>
+            <div class="description">
+              Conception d'une calculatrice 📱 from scratch, à partir de composants numériques de base.
+            </div>
+            <div class="btncl">
+              <button onclick="window.location.href='https://github.com/joel-cyborgue/Processeurs';">+
+                Participer</button>
+            </div>
+          </div>
 
-        <script>
-          // Script pour le bouton "Ajouter un nouveau projet"
-          document
-            .querySelector(".add-project a")
-            .addEventListener("click", function (event) {
-              event.preventDefault();
-              alert("Fonctionnalité à venir !");
-            });
-        </script>
+          <div class="cards">
+            <div class="heads">
+              <p>Programmation (IA)</p>
+              <img src="../assets/logo-white.png" alt="icone">
+            </div>
+            <div class="description">
+              Conception / finetune de modèles CNN pour la vision par ordinateur.
+            </div>
+            <div class="btncl">
+              <button onclick="window.location.href='https://github.com/joel-cyborgue/Processeurs';">+
+                Participer</button>
+            </div>
+          </div>
 
-        <h2>Nos membres</h2>
-        <div class="member-card">
-          <a href="presentation.html" id="cartediv">
-            <strong> Mawoussi Yao Pierre </strong><br />
-            <small>
-              Ingénieur électronique, passionné par l'IA, la microfabrication de
-              CPUs africains.
-            </small>
-          </a>
-        </div>
-
-        <div class="member-card">
-          <a href="presentation_1.html" id="cartediv">
-            <strong> Date Dante Joel </strong><br />
-            <small>
-              Ingénieur Logiciel, passionné par l'IA et la microfabrication de
-              CPUs africains.
-            </small>
-          </a>
-        </div>
-
-        <div class="member-card">
-          <a href="presentation_1.html" id="cartediv">
-            <strong> Adjogna Elysee Joel </strong><br />
-            <small>
-              Jeunes volontaires passionné par l'IA et specialiste en
-              prototypage et tests sur Proteus.
-            </small>
-          </a>
-        </div>
-
-        <div class="member-card">
-          <a href="presentation.html" id="cartediv">
-            <strong> Groupe Étudiant Fablab Lomé: </strong>
-            Jeunes volontaires en prototypage et tests sur Proteus.
-          </a>
-        </div>
-
-        <div class="video-section">
-          <!-- Intégration YouTube corrigée -->
-          <iframe
-            src="https://www.youtube.com/embed/A7wkKH8Nfco"
-            title="Événement TTECH en direct"
-            allowfullscreen
-          >
-          </iframe>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Historique de nos Réussites</h2>
-        <ul>
-          <li>
-            2023 : Prototypage d’une calculatrice make from scrach avec
-            utilisation de composant et IC made in Africa.
-          </li>
-          <li>
-            2024 : Réalisation d’un mini-oscilloscope analogique fonctionnel par
-            des élèves de 1ère.
-          </li>
-          <li>2025 : Lancement du projet de CPU Open Source “TCHIP-1”.</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2>Congrès et Événements</h2>
-        <ul>
-          <li>Avril 2025 : Participation au Salon des Makers – Lomé</li>
-          <li>
-            Juillet 2025 : Organisation du 1er Hackathon TTECH™ autour du FPGA
-            africain
-          </li>
-          <li>Décembre 2025 : Conférence “Low-Tech CPU Design” à Aného</li>
-        </ul>
-      </section>
-    </div>
-    <script>
-      function toggleMenu() {
-        const menuBar = document.getElementById("menuBar");
-        const burgerMenu = document.querySelector(".burger-menu");
-        menuBar.style.display =
-          menuBar.style.display === "flex" ? "none" : "flex";
-        burgerMenu.classList.toggle("active");
-      }
-    </script>
-
-    <footer class="site-footer">
-      <div class="footer-container">
-        <div class="footer-section">
-          <img
-            src="../assets/logo-no-background.png"
-            alt="TTECH Logo"
-            class="footer-logo"
-          />
-          <p>Pionniers de l'innovation technologique africaine depuis 2023.</p>
-          <div class="social-icons">
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="LinkedIn"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <div class="cards">
+            <div class="heads">
+              <p>Programmation (Web)</p>
+              <img src="../assets/logo-black.png" alt="icone">
+            </div>
+            <div class="description">
+              Développement collaboratif du site officiel TTECH™.<br>
+              Cliquez pour voir le dépôt GitHub !
+            </div>
+            <div class="btncl">
+              <button onclick="window.location.href='https://github.com/joel-cyborgue/ttech-host';">+
+                Participer</button>
+            </div>
           </div>
         </div>
 
-        <div class="footer-section">
-          <h3>Explorer</h3>
-          <ul>
-            <li><a href="../html/accueil.html">Accueil</a></li>
-            <li><a href="../html/a_propos.html">À propos</a></li>
-            <li><a href="../html/blog.html">Blog Tech</a></li>
-            <li><a href="../html/faq.html">Foire aux questions</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Ressources</h3>
-          <ul>
-            <li><a href="#">Documentation TCHIP-1</a></li>
-            <li><a href="#">Tutoriels Proteus</a></li>
-            <li><a href="#">Bibliothèque de composants</a></li>
-            <li><a href="#">Calendrier des événements</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Contact Rapide</h3>
-          <ul class="contact-info">
-            <li><i class="fas fa-envelope"></i> contact@ttech.tg</li>
-            <li><i class="fas fa-map-marker-alt"></i> Lomé, Togo</li>
-            <li><i class="fas fa-users"></i> Rejoindre notre FabLab</li>
-          </ul>
+        <div class="add-project">
+          <a href="ajouter_projet.html">
+            + Ajouter un nouveau projet
+          </a>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>
-          &copy; 2025 TTECH™. Tous droits réservés - Conçu avec
-          <i class="fas fa-heart" style="color: #d3660d"></i> en Afrique
-        </p>
-        <div class="legal-links">
-          <a href="../html/politique.html">Politique de confidentialité</a>
-          <a href="../html/conditions.html">Conditions d'utilisation</a>
+      <script>
+        // Script pour le bouton "Ajouter un nouveau projet"
+        document
+          .querySelector(".add-project a")
+          .addEventListener("click", function (event) {
+            event.preventDefault();
+            alert("Fonctionnalité à venir !");
+          });
+      </script>
+
+      <section class="members-section">
+        <h2>Nos membres</h2>
+
+        <div class="members-gallery">
+          <div class="member-card">
+            <a href="presentation.html">
+              <strong>Mawoussi Yao Pierre</strong>
+              <small>
+                Ingénieur électronique, passionné par l'IA, la microfabrication de CPUs africains.
+              </small>
+            </a>
+          </div>
+
+          <div class="member-card">
+            <a href="presentation2.html">
+              <strong>Date Dante Joel</strong>
+              <small>Ingénieur Logiciel, passionné par l'IA et la microfabrication de
+            CPUs africains.
+              </small>
+            </a>
+          </div>
+
+          <div class="member-card">
+            <a href="presentation3.html">
+              <strong> Adjogna Elysee Joel</strong>
+              <small>
+                Jeunes volontaires passionné par l'IA et specialiste en
+            prototypage et tests sur Proteus.
+              </small>
+            </a>
+          </div>
+          <div class="member-card">
+            <a href="presentation3.html">
+              <strong> Groupe Étudiant Fablab Lomé </strong>
+              <small>
+                Jeunes volontaires en prototypage et tests sur Proteus.
+              </small>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="video-section">
+        <!-- Intégration YouTube corrigée -->
+        <iframe src="https://www.youtube.com/embed/A7wkKH8Nfco" title="Événement TTECH en direct" allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <section class="timeline-section">
+      <h2>Historique de nos Réussites</h2>
+      <ul>
+        <li><span class="icon">🛠️</span> 2023 : Prototypage d’une calculatrice from scratch avec composants made in
+          Africa.</li>
+        <li><span class="icon">📡</span> 2024 : Mini-oscilloscope analogique fonctionnel réalisé par des élèves de 1ère.
+        </li>
+        <li><span class="icon">⚙️</span> 2025 : Lancement du CPU Open Source “TCHIP-1”.</li>
+      </ul>
+    </section>
+
+
+
+
+
+    <section class="section_">
+      <h2>🎤 Congrès et Événements</h2>
+      <ul>
+        <li>Avril 2025 : Participation au Salon des Makers – Lomé</li>
+        <li>Juillet 2025 : Organisation du 1er Hackathon TTECH™ autour du FPGA africain</li>
+        <li>Décembre 2025 : Conférence “Low-Tech CPU Design” à Aného</li>
+      </ul>
+    </section>
+  </div>
+  <script>
+    function toggleMenu() {
+      const menuBar = document.getElementById("menuBar");
+      const burgerMenu = document.querySelector(".burger-menu");
+      menuBar.style.display =
+        menuBar.style.display === "flex" ? "none" : "flex";
+      burgerMenu.classList.toggle("active");
+    }
+  </script>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <img src="../assets/logo-white.png" alt="TTECH Logo" class="footer-logo" />
+        <p>Pionniers de l'innovation technologique africaine depuis 2023.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
-    </footer>
-  </body>
+
+      <div class="footer-section">
+        <h3>Explorer</h3>
+        <ul>
+          <li><a href="../html/accueil.html">Accueil</a></li>
+          <li><a href="../html/a_propos.html">À propos</a></li>
+          <li><a href="../html/blog.html">Blog Tech</a></li>
+          <li><a href="../html/faq.html">Foire aux questions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Ressources</h3>
+        <ul>
+          <li><a href="#">Documentation TCHIP-1</a></li>
+          <li><a href="#">Tutoriels Proteus</a></li>
+          <li><a href="#">Bibliothèque de composants</a></li>
+          <li><a href="#">Calendrier des événements</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Rapide</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-envelope"></i> contact@ttech.tg</li>
+          <li><i class="fas fa-map-marker-alt"></i> Lomé, Togo</li>
+          <li><i class="fas fa-users"></i> Rejoindre notre FabLab</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy; 2025 TTECH™. Tous droits réservés - Conçu avec
+        <i class="fas fa-heart" style="color: #d3660d"></i> en Afrique
+      </p>
+      <div class="legal-links">
+        <a href="../html/politique.html">Politique de confidentialité</a>
+        <a href="../html/conditions.html">Conditions d'utilisation</a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+
 </html>
